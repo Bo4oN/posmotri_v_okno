@@ -9,7 +9,6 @@ html {
 }
 
 .page {
-  /*position: relative; После форматирования - удалить */
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -18,13 +17,6 @@ html {
   font-size: 18px;
   background-color: #1b1919;
 }
-
-/*.test {               После форматирования - удалить
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 10%;
-}*/
 
 h1,
 h2,
@@ -220,10 +212,6 @@ ol {
   overflow-y: auto;
 }
 
-.content__list-item {
-  margin-right: 5px;
-}
-
 .content__list .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -274,7 +262,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  padding: 1px;
+  padding: 1px 1px 1px 0;
   width: 194px;
   height: 103px;
   object-fit: cover;
