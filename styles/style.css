@@ -43,7 +43,6 @@ ol {
 .content {
   padding: 0 30px;
   width: 100%;
-  min-height: 534px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -52,7 +51,6 @@ ol {
 
 .result {
   min-width: 711px;
-  height: 456px;
 }
 
 .result__video-container {
@@ -83,7 +81,7 @@ ol {
 
 .search-form__fieldset-title {
   margin-bottom: 5px;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -91,6 +89,7 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -103,13 +102,13 @@ ol {
   appearance: none;
   width: 225px;
   color: white;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
   border-width: 1px 0;
   border-style: solid;
-  border-color: #fff;
+  border-color: currentColor;
   background-color: inherit;
 }
 
@@ -126,7 +125,7 @@ ol {
 .search-form__textfield::placeholder {
   color: #ffffffb2;
   opacity: 70%;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -162,8 +161,8 @@ ol {
 .button {
   background-color: inherit;
   color: #fff;
-  border: #fff solid 1px;
-  font-family: Fira Sans Condensed;
+  border: currentColor solid 1px;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -176,6 +175,10 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:focus-visible {
@@ -197,7 +200,7 @@ ol {
 
 .title {
   margin-bottom: 26px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -211,13 +214,12 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
-  overflow-x: hidden;
   overflow-y: auto;
   scrollbar-width: thin;
 }
 
 .content__list-item {
-  width: 397px;
+  width: 390px;
 }
 
 .content__list .content__list-item:not(:last-child) {
@@ -239,6 +241,10 @@ ol {
   text-decoration: underline;
 }
 
+.content__card-link:focus {
+  outline: none;
+}
+
 .content__card-link:focus-visible {
   outline: #fff solid 1px;
 }
@@ -249,13 +255,11 @@ ol {
   align-items: start;
 }
 
-.content__video-card-description-container {
-  width: 200px;
-}
-
 .content__video-card-title {
+  max-width: 200px;
   margin-bottom: 6px;
-  font-family: Oswald;
+  white-space: nowrap;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -263,7 +267,8 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  max-width: 200px;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -273,12 +278,13 @@ ol {
   padding: 1px 1px 1px 0;
   width: 194px;
   height: 103px;
+  object-position: center;
   object-fit: cover;
 }
 
 .more-button {
   margin: 2px;
-  width: 399px;
+  width: 389px;
   height: 34px;
 }
 
