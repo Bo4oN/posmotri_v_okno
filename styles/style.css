@@ -219,7 +219,7 @@ ol {
 }
 
 .content__list-item {
-  width: 390px;
+  width: 386px;
 }
 
 .content__list .content__list-item:not(:last-child) {
@@ -239,6 +239,10 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link:active {
+  background-color: #545050;
 }
 
 .content__card-link:focus {
@@ -284,7 +288,7 @@ ol {
 
 .more-button {
   margin: 2px;
-  width: 389px;
+  width: 383px;
   height: 34px;
 }
 
