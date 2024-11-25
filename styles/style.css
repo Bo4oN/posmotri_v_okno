@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -38,7 +41,6 @@ ol {
 }
 
 .content {
-  margin: 133px 0;
   padding: 0 30px;
   width: 100%;
   min-height: 534px;
