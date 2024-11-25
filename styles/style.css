@@ -38,9 +38,10 @@ ol {
 }
 
 .content {
-  padding: 133px 30px;
+  margin: 133px 0;
+  padding: 0 30px;
   width: 100%;
-  min-height: 800px;
+  min-height: 534px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -110,14 +111,14 @@ ol {
   background-color: inherit;
 }
 
-.search-form__textfield:active {
-  outline: none;
-  border-width: 1px;
-}
-
 .search-form__textfield:focus-visible {
   outline: #fff solid 1px;
   outline-offset: 1px;
+}
+
+.search-form__textfield:active {
+  outline: none;
+  border-width: 1px;
 }
 
 .search-form__textfield::placeholder {
